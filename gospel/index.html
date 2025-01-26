@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A website containing information on different genres of music.">
+    <!-- meta tag below is used for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>Musify: our group project - Christmas History</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_circle_up">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Import bootstrap css -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      
+    <!--Version infomation
+    File: ./christmas/index.html
+    Author: Thelma Clarke
+    Author: Sufyan Qureshi
+    Author: Laurence Hogan
+    Author: Alexander Abramov
+    Author: Stephen Adanikin
+
+    Creation: 20th of November 2024
+    Last Modified: 27/11/2024
+    Description: Group Project; Chosen topic is Music Genres
+    Description: Christmas index page
+    https://www.w3schools.com/ and https://getbootstrap.com/ was used to help make this 
+    -->
+
+    <link rel="stylesheet" href="css/layout.css" > 
+  </head>
+
+  <body>
+    <main class="bg-all">
+      <!-- Navbar Alex, Thelma added the navcolor class -->
+      <nav class="navbar navbar-expand-lg navbar-light navcolor">
+        <div class="container-fluid">
+          <!-- Logo made by Larry -->
+          <a class="navbar-brand" href="index.html"><img src="./images/musify-logo.jpg" alt="Musify Logo" width="100" height="70"></a>
+          <h2 class="logo">Musify</h2>  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!--  Pop  -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./pop/index.html">
+                Pop
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./pop/index.html">History</a></li>
+                  <li><a class="dropdown-item" href="./pop/artists.html">Artists</a></li>
+                  <li><a class="dropdown-item" href="./pop/songs.html">Songs</a></li>
+                  <li><a class="dropdown-item" href="./pop/gigs.html">Concerts</a></li>
+                  <li><a class="dropdown-item" href="./pop/impact.html">Impact</a></li>
+                </ul>
+              </li>
+              <!--  Metal: Larry: He did the naming of his folders. It's a better naming system than the rest of us used. Thelma  -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./metal/metal-history.html">
+                Metal
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./metal/metal-history.html">History</a></li>
+                  <li><a class="dropdown-item" href="./metal/metal-artists.html">Artists</a></li>
+                  <li><a class="dropdown-item" href="./metal/metal-songs.html">Songs</a></li>
+                  <li><a class="dropdown-item" href="./metal/metal-gigs.html">Concerts</a></li>
+                  <li><a class="dropdown-item" href="./metal/metal-impact.html">Impact</a></li>
+                </ul>
+              </li>
+              <!--   Gospel: Stephen  -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./gospel/index.html">
+                Gospel
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./gospel/gospel-introduction.html">Introduction</a></li>
+                  <li><a class="dropdown-item" href="./gospel/gospel-artists.html">Artists</a></li>
+                  <li><a class="dropdown-item" href="./gospel/gospel-songs.html">Songs</a></li>
+                  <li><a class="dropdown-item" href="./gospel/gospel-history.html">History</a></li>
+                  <li><a class="dropdown-item" href="./gospel/gospel-impact.html">Impact</a></li>
+                </ul>
+              </li>
+              <!--  Hip hop  -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./hiphop/index.html">
+                Hip hop
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./hiphop/index.html">History</a></li>
+                  <li><a class="dropdown-item" href="./hiphop/artists.html">Artists</a></li>
+                  <li><a class="dropdown-item" href="./hiphop/songs.html">Songs</a></li>
+                  <li><a class="dropdown-item" href="./hiphop/gigs.html">Concerts</a></li>
+                  <li><a class="dropdown-item" href="./hiphop/impact.html">Impact</a></li>
+                </ul>
+              </li>
+              <!--   Christmas: Thelma   -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./christmas/index.html">
+                Christmas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./christmas/index.html">History</a></li>
+                  <li><a class="dropdown-item" href="./christmas/artists.html">Artists</a></li>
+                  <li><a class="dropdown-item" href="./christmas/songs.html">Songs</a></li>
+                  <li><a class="dropdown-item" href="./christmas/gigs.html">Concerts</a></li>
+                  <li><a class="dropdown-item" href="./christmas/impact.html">Impact</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Search Form: Alex & thelma -->
+            <form class="d-flex" id="searchForm">
+              <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success search-colour" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- Thelma completed the work below this point  -->
+    <!-- HEADER -->
+    <!-- When I took out the christmas header, then I wasn't able to see all the the dropdowns
+     So I had to add in the header here. I will try to make is s-->
+    <header>
+      <div
+      class="bg-image d-flex justify-content-center align-items-center"
+      style="background-image: url('./images/soundwave.jpg');
+      height: 27vh;
+      ">
+      <h1 class=""><br>Welcome to Musify!</h1>
+      </div>
+    </header>
+    <!-- END OF HEADER -->
+    <section>
+    <!-- CONTAINER FOR THE ABOUT US INTRO Thelma's work  -->
+      <div class="container-fluid text-center pt-3 bg-all">
+        <div class="row gx-4">
+          <div class="col">
+            <a href="#intro" class="btn btn-secondary">Intro</a>
+            <a href="#variety" class="btn btn-secondary">Variety</a>
+            <a href="#connection" class="btn btn-secondary">Connection</a>
+            <a href="#genres" class="btn btn-secondary">Genres</a>
+            <h2 class="card-title text-center pt-3">Welcome to Music Genres</h2>
+            <div class="card border-0 bg-all">
+              <div class="card-body">
+                <h3 id="intro" class="card-title">Who Are We?</h3>
+                <div class="text-center py-2" role="group">
+                  <p class="card-text">
+                    Where passion for music meets the joy of discovery! Founded in 2024 in Dublin, 
+                    Ireland, we are a group of five music enthusiasts united by a shared mission: to celebrate the world of music and help others explore its incredible diversity. 
+                    From timeless classical compositions to the vibrant rhythms of hip-hop and the immersive beats of electronic music, 
+                    we're here to inspire, educate, and share the universal love of sound.
+                  </p>
+                  <p class="card-text">
+                    Our team believes that music is more than entertainment, it's a bridge between cultures, 
+                    emotions, and stories. Each genre tells its own tale, shaped by history, tradition, and innovation. 
+                    Through our platform, we aim to showcase the richness of musical styles, uncover their origins, and highlight how they connect us all.
+                  </p>
+                  <p class="card-text">
+                    Whether you're a seasoned aficionado or just starting your musical journey, we're here to guide you. 
+                    Join us as we explore iconic genres, spotlight hidden gems, and dive into the creative world of artists who shape the music we love. 
+                    Together, let's expand horizons, spark conversations, and celebrate the universal language that is music. 
+                    With <b>Musify</b>, there's always a new melody to discover!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  END OF CONTAINER FOR THE ABOUT US INTRO   -->
+      <!-- BAD JOKE Thelma's work-->
+      <div class="container-fluid text-center py-4 bg-breaker">
+        <h3 class="card-title text-center">Bad Joke Alert!</h3>
+        <div class="row">
+          <div class="col-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+              <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"/>
+              <path fill-rule="evenodd" d="M9 3v10H8V3z"/>
+              <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"/>
+            </svg>
+          </div>
+          <div class="col-8">
+            <p class="card-text">
+              Why did the music teacher go to jail?
+            </p>
+            <p class="card-text">
+              Because she got caught playing a major scale!
+            </p>
+          </div>
+          <div class="col-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+              <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"/>
+              <path fill-rule="evenodd" d="M9 3v10H8V3z"/>
+              <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- END OF BAD JOKE -->
+
+      <!-- START OF CONTAINER FOR MUSIC GENRES -->
+
+      <div class="container-fluid text-center bg-all">
+        <div class="card border-0 bg-all">
+          <div class="card-body">
+            <h3 id="variety" class="card-title">A World of Variety</h3>
+            <p class="card-text">
+              Music is as diverse as the people who love it. 
+              Pop music dominates the charts with its catchy hooks and universal appeal, 
+              while hip-hop speaks to the heart with storytelling and hard-hitting beats. 
+              On the other hand, metal music is all about passion and power, bringing an unmatched intensity that fans can't get enough of. 
+              Then there's gospel, which uplifts and inspires with its spiritual roots and emotional depth. 
+              And of course, Christmas music, which magically turns any moment into a holiday celebration. 
+              No matter your taste, there's a genre that speaks to you.
+            </p>
+            <h3 id="connection" class="card-title">Something for Everyone</h3>
+            <p class="card-text">
+              What makes music genres so special is their ability to connect with everyone differently. 
+              Some people find joy and nostalgia in holiday tunes, while others crank up metal for an adrenaline rush. 
+              Hip-hop fans love the rhythm and realness, while gospel listeners turn to its hopeful messages. 
+              Pop music is a go-to for feel-good vibes, whether at parties or on your morning commute. 
+              The beauty of music is that it has no limits, there's something for everyone to enjoy, 
+              no matter where you are or what mood you're in. 
+              Music genres remind us that we're all united by the love of sound.
+            </p>
+          </div>
+        </div>
+      </div>     
+      <!-- END OF CONTAINER FOR MUSIC GENRES -->
+    </section>
+
+    <section>
+    <!--  Christmas: Thelma  -->
+      <div class="container-fluid text-center bg-all pb-2">
+        <h3 id="genres" class="card-title">Discover the World of Music with Musify</h3>
+            <p class="card-text">
+              Here at <b>Musify</b>, we're passionate about every kind of music, 
+              from toe-tapping pop hits to soulful gospel tunes and everything in between. 
+              We believe that music brings people together and helps us connect with different cultures, emotions, and stories. 
+              If you're curious to learn more about the amazing variety of music genres, 
+              we've got you covered! Click on one of the links below to dive into the unique styles, 
+              histories, and sounds that make each genre special. Let's explore the magic of music together!
+            </p>
+        <div class="container px-5 container-genres">
+          <a href="./christmas/index.html" class="cgu">
+            <div class="row align-items-center">
+              <div class="col">
+                <img src="./images/xmas.jpg" alt="Cristmas bells on sheet music" height=200 style = "border-radius: 10%">
+              </div>
+              <div class="col">
+                <p class="card-text">
+                  Christmas music captures the festive spirit with heartwarming lyrics. Blending pop, jazz, and classical music, it evokes the magic of the season.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!--  GOSPEL  -->
+        <div class="container px-5 container-genres">
+          <a href="./gospel/gospel-introduction.html" class="cgu">  
+            <div class="row align-items-center">
+              <div class="col">
+                <p class="card-text">
+                  Rooted in spiritual themes, gospel combines powerful vocals, and soulful melodies to inspire and convey faith.
+                </p>
+              </div>
+              <div class="col">
+                <img src="./images/gospel.jpg" alt="Gospel singers" width=200 style = "border-radius: 10%">
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <!--  Hip hop  -->
+        <div class="container px-5 container-genres">
+          <a href="./hiphop/index.html" class="cgu">
+            <div class="row align-items-center">
+              <div class="col">
+                <img src="./images/hiphop.jpg" alt="Hip hop singers" width=200 style = "border-radius: 10%">
+              </div>
+              <div class="col">
+                <p class="card-text">
+                  Centered on rhythmic beats, lyrical flow, and storytelling, 
+                  hip hop expresses cultural identity and social commentary.        
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Metal  -->  
+        <div class="container px-5 container-genres">
+          <a href="./metal/metal-history.html" class="cgu"> 
+            <div class="row align-items-center">
+              <div class="col">
+                <p class="card-text">
+                  Characterized by heavy guitar riffs, aggressive vocals, and intense energy, 
+                  metal music often explores dark themes and powerful emotions.
+                </p>
+              </div>
+              <div class="col">
+                <img src="./images/metal.jpg" alt="Fans of Metal Music" width=200 style = "border-radius: 10%">
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!--POP -->
+        <div class="container px-5 container-genres">
+          <a href="./pop/index.html" class="cgu">
+            <div class="row align-items-center">
+              <div class="col">
+                <img src="./images/pop.jpg" alt="Jennifer Lopez" width=200 style = "border-radius: 10%">
+              </div>
+              <div class="col">
+                <p class="card-text">
+                  Known for catchy melodies, mainstream appeal, 
+                  pop music blends diverse influences to dominate global music charts.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>       
+    </section>
+
+    <!-- FOOTER: Thelma-->
+        
+    <footer id = "footer-layout" class="footer-layout">
+      <div class="row">
+        <div class="col">
+          <div class="card footer-colour border-0">
+            <div class="card-body">
+              <h5 class="card-title">Creators:</h5>
+              <span class="footer-text">Thelma Clarke<br></span> 
+              <span class="footer-text">Sufyan Qureshi<br></span> 
+              <span class="footer-text">Laurence Hogan<br></span> 
+              <span class="footer-text">Alexander Abramov<br></span> 
+              <span class="footer-text">Stephen Adanikin<br></span> 
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card footer-colour border-0">
+            <div class="card-body">
+              <h5 class="card-title">This is student coursework</h5>
+              <span class="footer-text">Lecturer: <br><a href="http://www.computing.dcu.ie/~mscriney/" class="footer-href">Michael Scriney<br></a></span> 
+              <span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" class="footer-href" target="_blank" title="W3C HTML Validation Service" >Valid HTML</a><br></span> 
+              <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card footer-colour border-0">
+            <div class="card-body">
+              <h5 class="card-title">Would you like to get in contact?</h5>
+              <span class="footer-text">Find us in the Labs at DCU<br></span> 
+              <span class="footer-text">Or click on the link below to drop us an email<br>
+                <a href="../contact.html" class="footer-href">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                  </svg>
+                </a></span> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- follow us on twitter ect -->
+      <div class="row">
+        <div class="col">
+          <div class="card footer-colour border-0">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card footer-colour border-0">
+            <div class="card-body">
+              <h5 class="card-title">Follow us:</h5>
+            </div>
+          </div>
+        </div>
+        <!-- row for the logos for twitter etc-->
+
+        <!-- col for the logo for twitter etc-->
+
+        <div class="col">
+          <div class="card footer-colour border-0">
+            <div class="card-body">
+              <a href="https://x.com/DCU?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                </svg> 
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- col for the logo for facebook etc-->
+
+        <div class="col">
+          <div class="card footer-colour border-0">
+            <div class="card-body">
+              <a href="https://www.facebook.com/DCU/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg> 
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- col for the logo for instagram etc-->
+
+        <div class="col">
+
+          <div class="card footer-colour border-0">
+            <div class="card-body">
+              <a class="footer-images" href="https://www.instagram.com/dublincityuniversity/?hl=en"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>                    
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card footer-colour border-0">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+      </div>  
+
+
+      <!--top of the page: Thelma -->
+          
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <script>
+          // Get the button
+          let mybutton = document.getElementById("myBtn");
+          
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+              } else {
+              mybutton.style.display = "none";
+              }
+          }
+          
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+          }
+      </script>
+      
+              
+      <script>
+                    
+      // Search function
+      document.getElementById('searchForm').addEventListener('submit', function(event) {
+          event.preventDefault(); 
+  
+          const query = document.getElementById('searchInput').value.toLowerCase();
+  
+          if (query) {
+              
+            const elements = document.querySelectorAll('body *:not(nav):not(nav *)'); // Search for all text, except for text in navbar
+            let found = false;
+            for (const element of elements) {
+              if (element.textContent.toLowerCase().includes(query)) {
+                    
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+                found = true;
+                break; 
+              }
+            }
+          if (!found) {
+                alert('Search not found');
+            }
+          }
+          });
+        </script>
+              
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!-- Import bootstrap -->
+
+      </footer>
+      <!-- END OF FOOTER -->
+      </main>
+    </body>
+</html>

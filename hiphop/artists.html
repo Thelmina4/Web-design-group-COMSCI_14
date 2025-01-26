@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A website containing information on different genres of music.">
+        <!-- meta tag below is used for Internet Explorer and mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+        <title>Musify: our group project</title>
+        <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/ -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8.60,200.900;1,8.60,200.900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20.48,100.700,0.1,-50.200&icon_names=arrow_circle_up">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Import bootstrap css -->
+
+          <!--Version infomation
+          File: ../metal/.html
+          Author: Thelma Clarke
+          Author: Sufyan Qureshi
+          Author: Laurence Hogan
+          Author: Alexander Abramov
+          Author: Stephen Adanikin
+          
+          Creation: 20th of November 2024
+          Last Modified: 21/11/2024
+          Description: Project Portfolio 
+          https://www.w3schools.com/ & https://getbootstrap.com was used to help make this portfolio
+          -->
+
+
+        <link rel="stylesheet" href="css/artists.css" > 
+    </head>
+
+    <body>
+          
+
+                       <!-- Navbar Alex-->
+          <nav class="navbar navbar-expand-lg navbar-light bg-cyan navcolor">
+
+            <div class="container-fluid">
+              <!-- Logo made by Larry -->
+              <a class="navbar-brand" href="../index.html"><img src="../images/musify-logo.jpg" alt="Musify Logo" width="100" height="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <!--  Pop  -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#pop" id="navbarDropdown" role="button">
+                  Pop
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../pop/history.html">History</a></li>
+                    <li><a class="dropdown-item" href="../pop/artists.html">Artists</a></li>
+                    <li><a class="dropdown-item" href="../pop/songs.html">Songs</a></li>
+                    <li><a class="dropdown-item" href="../pop/oncerts.html">Concerts</a></li>
+                    <li><a class="dropdown-item" href="../pop/impact.html">Impact</a></li>
+                  </ul>
+                </li>
+
+
+                <!--  Metal: Larry  -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#metal" id="navbarDropdown" role="button">
+                  Metal
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../metal/metal-history.html">History</a></li>
+                    <li><a class="dropdown-item" href="../metal/metal-artists.html">Artists</a></li>
+                    <li><a class="dropdown-item" href="../metal/metal-songs.html">Songs</a></li>
+                    <li><a class="dropdown-item" href="../metal/metal-gigs.html">Concerts</a></li>
+                    <li><a class="dropdown-item" href="../metal/metal-impact.html">Impact</a></li>
+                  </ul>
+                </li>
+
+
+                <!--   Gospel: Stephen  -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#gospel" id="navbarDropdown" role="button">
+                  Gospel
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../gospel/gospel-introduction.html">Introdcution</a></li>
+                    <li><a class="dropdown-item" href="../gospel/gospel-artists.html">Artists</a></li>
+                    <li><a class="dropdown-item" href="../gospel/gospel-songs.html">Songs</a></li>
+                    <li><a class="dropdown-item" href="../gospel/gospel-history.html">History</a></li>
+                    <li><a class="dropdown-item" href="../gospel/gospel-impact.html">Impact</a></li>
+                  </ul>
+                </li>
+
+
+                <!--  Hip hop  -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#hippop" id="navbarDropdown" role="button">
+                  Hip hop
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="index.html">History</a></li>
+                    <li><a class="dropdown-item" href="artists.html">Artists</a></li>
+                    <li><a class="dropdown-item" href="songs.html">Songs</a></li>
+                    <li><a class="dropdown-item" href="gigs.html">Concerts</a></li>
+                    <li><a class="dropdown-item" href="impact.html">Impact</a></li>
+                  </ul>
+                </li>
+
+                <!--   Christmas: Thelma   -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#christmas" id="navbarDropdown" role="button">
+                  Christmas
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../christmas/index.html">History</a></li>
+                    <li><a class="dropdown-item" href="../christmas/artists.html">Artists</a></li>
+                    <li><a class="dropdown-item" href="../christmas/songs.html">Songs</a></li>
+                    <li><a class="dropdown-item" href="../christmas/gigs.html">Concerts</a></li>
+                    <li><a class="dropdown-item" href="../christmas/impact.html">Impact</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+
+              <!-- Search Form: Alex-->
+              <form class="d-flex" id="searchForm">
+                <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+          </div>
+        </nav>
+
+      
+          <div
+          class="bg-image d-flex justify-content-center align-items-center"
+          style="background-image: url('images/backgroundjpg.jpg');
+          height: 30vh;
+          ">
+          <h1 id="text-white"><br>Hip-Hop</h1>
+        </div>
+        
+
+        <!-- Alex   -->
+       
+          <div class="container-fluid" style="margin-bottom: 15px;">
+            <div class="row gx-4">
+          <div class="col">
+            <div class="card">
+              <div class="card-body" style="background-color: #EDF6F9;">
+                <h2 class="card-title">Hip-Hop Artists</h2>
+                <p class="card-text">
+                  Hip-hop is a genre of music most often characterized by a strong, rhythmic beat and a rapping vocal track.<br><br>
+                  The genre originated in New York City in the 1970s as a cultural exchange among Black, Latino, and Caribbean youth<br>
+                  and has grown into one of the most consumed genres of music in the United States.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <!-- Containers by Alex-->
+
+          <!--  Kanye West  -->
+          <div class="img-size">
+          <div class="container px-4">
+            <div class="row gx-10">
+              <div class="row">
+                <img src="images/kanye.jpg" alt="" id="img-size">
+              </div>
+              <div class="row">
+                <p><strong>Kanye West</strong> is one of the most influential figures in modern hip-hop, blending music, fashion, and culture into a unique artistic identity. Emerging with his debut album, <em>The College Dropout</em> (2004), Kanye revolutionized the sound of hip-hop with soul-inspired beats and introspective lyrics.</p>
+
+                <p>Known for pushing boundaries, his discography spans groundbreaking albums like <em>Graduation</em>, <em>808s & Heartbreak</em>, and <em>My Beautiful Dark Twisted Fantasy</em>, each redefining industry norms. Beyond music, Kanye has made his mark in fashion with his Yeezy brand, combining minimalistic designs with cultural impact.</p>
+                
+                <p>Despite controversies, his visionary approach has shaped hip-hop as a genre and global cultural force. Kanye's ability to challenge conventions and spark dialogue makes him a vital figure in exploring the intersections of art, music, and design.</p>
+                
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+
+          <!-- Kendrick Lamar  -->
+           <div class="img-size">
+          <div class="container px-4">
+            <div class="row gx-10">
+              <div class="row"></div>
+                <img src="images/kendrick.jpg" alt=""  id="img-size">
+              </div>
+              <div class="row">
+                <p><strong>Kendrick Lamar</strong> is a critically acclaimed hip-hop artist known for his profound lyricism and storytelling. Emerging from Compton, California, he gained recognition with his debut album, <em>Section.80</em>, and achieved mainstream success with the groundbreaking <em>good kid, m.A.A.d city</em> (2012).</p>
+
+                <p>His work blends introspection, social commentary, and innovative production, exemplified in albums like <em>To Pimp a Butterfly</em> and <em>DAMN.</em>, which won the Pulitzer Prize for Music in 2018—a first for a hip-hop artist. Kendrick's music addresses themes of identity, race, and personal growth, making him a voice for his generation.</p>
+                
+                <p>With a distinct ability to weave complex narratives into his tracks, Kendrick Lamar continues to inspire and influence not only the hip-hop community but the broader cultural landscape.</p>
+                
+               </div>
+               
+            
+            </div>
+          </div>
+
+
+
+          </div>
+          </div>
+          <!--  Lauryn Hill  -->
+          <div class="img-size">
+          <div class="container px-4">
+            <div class="row gx-10">
+              <div class="row">
+                <img src="images/lauryn.jpg" alt=""   id="img-size">
+              </div>
+              <div class="row">
+                <p><strong>Lauryn Hill</strong> is a legendary artist whose impact on hip-hop, R&B, and soul is unmatched. Rising to fame as a member of the Fugees, she captivated audiences with her powerful voice and lyrical prowess, notably on the album <em>The Score</em>.</p>
+
+                <p>Her solo debut, <em>The Miseducation of Lauryn Hill</em> (1998), became a cultural milestone, blending hip-hop, soul, and reggae with deeply personal and socially conscious themes. The album won five Grammy Awards, including Album of the Year, solidifying her as a groundbreaking artist.</p>
+                
+                <p>Lauryn Hills timeless music and magnetic performances have influenced countless artists, making her a pivotal figure in shaping modern music. Despite stepping back from the spotlight, her legacy continues to resonate with fans and the industry alike.</p>
+                
+              </div>
+            </div>
+          </div>
+          </div>
+        
+
+       <!-- FOOTER: Thelma-->
+            
+       <footer id = "footer-layout" class="footer-layout">
+        <div class="row">
+          <div class="col">
+            <div class="card footer-colour border-0">
+              <div class="card-body">
+                <h5 class="card-title">Creators:</h5>
+                <span class="footer-text">Thelma Clarke<br></span> 
+                <span class="footer-text">Sufyan Qureshi<br></span> 
+                <span class="footer-text">Laurence Hogan<br></span> 
+                <span class="footer-text">Alexander Abramov<br></span> 
+                <span class="footer-text">Stephen Adanikin<br></span> 
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card footer-colour border-0">
+              <div class="card-body">
+                <h5 class="card-title">This is student coursework</h5>
+                <span class="footer-text">This is student coursework<br></span> 
+                <span class="footer-text">Lecturer: <br><a href="http://www.computing.dcu.ie/~mscriney/" class="footer-href">Michael Scriney<br></a></span> 
+                <span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" class="footer-href" title="W3C HTML Validation Service" >Valid HTML</a><br></span> 
+                <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card footer-colour border-0">
+              <div class="card-body">
+                <h5 class="card-title">Would you like to get in contact?</h5>
+                <span class="footer-text">Find us in the Labs at DCU<br></span> 
+                <span class="footer-text">Or click on the link below to drop us an email<br>
+                  <a href="contact.html" class="footer-href">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-envelope" viewBox="0 0 16 16">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                    </svg>
+                  </a></span> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- follow us on twitter ect -->
+        <div class="row">
+          <div class="col">
+            <div class="card footer-colour border-0">
+              <div class="card-body">
+                <h5 class="card-title" role="placeholder"></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card footer-colour border-0">
+              <div class="card-body">
+                <h5 class="card-title">Follow us:</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- col for the logo for twitter etc-->
+
+          <div class="col">
+            <div class="card footer-colour border-0">
+              <div class="card-body">
+                <a href="https://x.com/DCU?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                  </svg> 
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- col for the logo for facebook etc-->
+
+          <div class="col">
+            <div class="card footer-colour border-0">
+              <div class="card-body">
+                <a href="https://www.facebook.com/DCU/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                  </svg> 
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- col for the logo for instagram etc-->
+
+          <div class="col">
+
+            <div class="card footer-colour border-0">
+              <div class="card-body">
+                <a class="footer-images" href="https://www.instagram.com/dublincityuniversity/?hl=en"> 
+                  <svg xmlns="http://www.w3.org/2000/svg"width="30" height="30" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg>                    
+                 </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card footer-colour border-0">
+              <div class="card-body">
+                <h5 class="card-title" role="placeholder"></h5>
+              </div>
+            </div>
+          </div>
+        </div>  
+                      </footer>
+
+       <!--top of the page: Thelma -->
+      
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+          <script>
+              // Get the button
+              let mybutton = document.getElementById("myBtn");
+              
+              // When the user scrolls down 20px from the top of the document, show the button
+              window.onscroll = function() {scrollFunction()};
+              
+              function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  mybutton.style.display = "block";
+                  } else {
+                  mybutton.style.display = "none";
+                  }
+              }
+              
+              // When the user clicks on the button, scroll to the top of the document
+              function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+              }
+          </script>
+          
+          
+          <script>
+            // Search function
+            document.getElementById('searchForm').addEventListener('submit', function(event) {
+                event.preventDefault(); 
+        
+                const query = document.getElementById('searchInput').value.toLowerCase();
+        
+                if (query) {
+                    
+                    const elements = document.querySelectorAll('body *:not(nav):not(nav *)'); // Search for all text
+                    let found = false;
+                    for (const element of elements) {
+                        if (element.textContent.toLowerCase().includes(query)) {
+                            
+                            element.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+                            found = true;
+                            break; 
+                        }
+                    }
+                    if (!found) {
+                        alert('Search not found');
+                    }
+                }
+            });
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!-- Import bootstrap -->
+
+  </footer>
+</body>
+</html>
